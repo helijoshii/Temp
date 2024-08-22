@@ -1,137 +1,237 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Bootstrap demo</title>
     <link href="./css/bootstrap.min.css " rel="stylesheet" />
-    <link href="./css/styles.css " rel="stylesheet"/>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" referrerpolicy="no-referrer" />
-
+    <link href="./css/styles.css " rel="stylesheet" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <header class="d-flex flex-column gap-3 header">
-        <div class="container">
-            <div class="header-text-top">
-                <ul class="contact-list ul-text">
-                    <li>+44 (0) 203 195 3933</li>
-                    <li>Linkedin</li>
-                    <li>Email Us :info@pharmalaneuk.com </li>             
-                </ul>
-            </div>
-            <div class="header-text">
-                <div class="logo">
-                    <img src="./images/pharmalane-uk-logo.png" alt="logo"/>
-                </div>
-                <div class="menu">
-                    <ul class="ul-text">
-                        <li>Home</li>
-                        <li>About us <i class="fa-solid fa-angle-down ms-2"></i>
-                            <ul>
-                                <li>About us</li>
-                            </ul>
-                        </li>
-                        <li>Services <i class="fa-solid fa-angle-down ms-2"></i>
-                            <ul>
-                                <li>Services</li>
-                            </ul>
-                        </li>                     
-                        <li>
-                            WIN-WIN Solution
-                        </li>
-                        <li>Quality Systems & Confidentiality</li>
-                        <li>Careers</li>
-                    </ul>
-                    
-                    <button class="btn-contactUs">Contact us</button>
-                </div>
-            </div>
+      <div class="container">
+        <div class="header-text-top">
+          <ul class="contact-list ul-text">
+            <li>+44 (0) 203 195 3933</li>
+            <li>Linkedin</li>
+            <li>Email Us :info@pharmalaneuk.com</li>
+          </ul>
         </div>
+        <div class="header-text">
+          <div class="logo">
+            <img src="./images/pharmalane-uk-logo.png" alt="logo" />
+          </div>
+          <div class="menu">
+            <ul class="ul-text">
+              <li>Home</li>
+              <li>
+                About us <i class="fa-solid fa-angle-down ms-2"></i>
+                <ul>
+                  <li>About us</li>
+                </ul>
+              </li>
+              <li>
+                Services <i class="fa-solid fa-angle-down ms-2"></i>
+                <ul>
+                  <li>Services</li>
+                </ul>
+              </li>
+              <li>WIN-WIN Solution</li>
+              <li>Quality Systems & Confidentiality</li>
+              <li>Careers</li>
+            </ul>
+
+            <button class="btn-contactUs">Contact us</button>
+          </div>
+        </div>
+      </div>
     </header>
 
     <div class="">
+      <section class="hero-page translucent-background">
+        <div class="video">
+          <video class="bg-video" autoplay muted loop>
+            <source src="./images/video.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div>
+          <h1>A GLOBAL LEADER</h1>
+          <p class="hero-text">GxP Auditing Services</p>
+          <p class="hero-text">Ready GMP Audit Reports</p>
+        </div>
+      </section>
 
-        <section class="hero-page translucent-background">
-            <div class="video">
-                <video class="bg-video" autoplay muted loop>
-                    <source src="./images/video.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </div>
-            <div>
-                <h1>A GLOBAL LEADER</h1>
-                <p class="hero-text">GxP Auditing Services</p>
-                <p class="hero-text">Ready GMP Audit Reports</p>
-            </div>
-        </section>
+      <section id="services" class="services container">
+        <h3 class="">our services</h3>
+        <div class="card-main">
+          <div class="card">
+            <img src="./images/doctor.png" />
+            <p>GMP Audit Services</p>
+            <button>Read More</button>
+          </div>
+          <div class="card">
+            <img src="./images/doctor.png" />
+            <p>GMP Audit Services</p>
+            <button>Read More</button>
+          </div>
+          <div class="card">
+            <img src="./images/doctor.png" />
+            <p>GMP Audit Services</p>
+            <button>Read More</button>
+          </div>
+        </div>
+      </section>
 
-        <section id="services" class="services container">
-            <h3 class="service-heading">our services</h3>
-            <div class="card-main">
-                <div class="card">
-                    <img src="./images/doctor.png" />
-                    <p>GMP Audit Services</p>
-                    <button>Read More</button>
+      <section>
+        <div class="recommend">
+          <h3 class="container">
+            WHY WE ARE HIGHLY RECOMMENDED AMONGST THE CLIENTS
+          </h3>
+          <div class="recommend-cards container">
+            <div class="recommend-cards-ui">
+              <img src="./images/Icon@2x.png" />
+              <p>Global Experience</p>
+              <span
+                >Over 15 year's of experience in the field and serving to the
+                clients worldwide hence well versed with global quality
+                requirements in auditing. Amongst all GxP audits, GMP audits is
+                our specialization.</span
+              >
+            </div>
+            <div class="recommend-cards-ui">
+              <img src="./images/Icon@2x.png" />
+              <p>Global Experience</p>
+              <span
+                >Over 15 years’ of experience in the field and serving to the
+                clients worldwide hence well versed with global quality
+                requirements in auditing. Amongst all GxP audits, GMP audits is
+                our specialization.</span
+              >
+            </div>
+            <div class="recommend-cards-ui">
+              <img src="./images/Icon@2x.png" />
+              <p>Global Experience</p>
+              <span
+                >Over 15 years’ of experience in the field and serving to the
+                clients worldwide hence well versed with global quality
+                requirements in auditing. Amongst all GxP audits, GMP audits is
+                our specialization.</span
+              >
+            </div>
+            <div class="recommend-cards-ui">
+              <img src="./images/Icon@2x.png" />
+              <p>Global Experience</p>
+              <span
+                >Over 15 years’ of experience in the field and serving to the
+                clients worldwide hence well versed with global quality
+                requirements in auditing. Amongst all GxP audits, GMP audits is
+                our specialization.</span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="PharmaNum">
+          <div class="hexagon-container container">
+            <div class="hexagon">
+              <img src="./images/PharmanumIcon.png" alt="Pharmanum Icon" />
+              <h3>400+</h3>
+              <h4>Clients worldwide</h4>
+            </div>
+            <div class="hexagon"></div>
+            <div class="hexagon"></div>
+            <div class="hexagon"></div>
+            <div class="hexagon"></div>
+          </div>
+          <h3>SOME OF OUR VALUED CLIENTS</h3>
+          <section class="testimonial">
+            <div class="container Testimonial-img">
+              <img src="./images/Testimonial.png" />
+              <img src="./images/Testimonial.png" />
+              <img src="./images/Testimonial.png" />
+              <img src="./images/Testimonial.png" />
+              <img src="./images/Testimonial.png" />
+              <img src="./images/Testimonial.png" />
+              <img src="./images/Testimonial.png" />
+              <img src="./images/Testimonial.png" />
+              <img src="./images/Testimonial.png" />
+            </div>
+            <h3>CLIENT TESTIMONIAL</h3>
+            <div class="textimonial-text container">
+              <img src="./images/icon1.png" />
+              <div class="carousel-button">
+                <img src="./images/leftarrow.png" />
+                  <p>
+                    We at Lanza Pharma are very pleased with the partnership made
+                    between Lanza Pharma and Pharmalane for GMP audits on our
+                    suppliers around the world. Sincerely, the quality of the audits
+                    offered by Pharmalane has been extremely important in the
+                    selection of increasingly qualified suppliers by our company.
+                  </p>
+                  <img src="./images/rightarrow.png" />
+              </div>
+              <h4>Vanderlanzs Dantas</h4>
+              <span>CEO, Lanza Pharma Brazil</span>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <section>
+        <div class="suplier">
+          <h3>NEED TO QUALIFY A SUPPLIER?</h3>
+          <h4>
+            Are you interested in assessing a potential supplier's
+            qualifications?
+          </h4>
+          <div class="supplier-content container">
+            <div class="supplier-card">
+              <img src="./images/suppliericon.png" />
+              <h3>Browse Our Audit Library</h3>
+              <p>
+                Click here to check if the audits/ reports you are looking for
+                is already there in our audit report database (already conducted
+                or scheduled) and you can get it right away
+              </p>
+              <button>Click here</button>
+            </div>
+            <div class="library-content">
+                <div class="library">
+                  <p>
+                    Unable To Find The Audit Report You Are Looking For In Our
+                    Library?
+                  </p>           
                 </div>
-                <div class="card">
-                    <img src="./images/doctor.png" />
-                    <p>GMP Audit Services</p>
-                    <button>Read More</button>
-                </div>
-                <div class="card">
-                    <img src="./images/doctor.png" />
-                    <p>GMP Audit Services</p>
-                    <button>Read More</button>
-                </div>
+                <span>No problem! Request a fresh audit now.</span>
             </div>
-        </section>
-
-        <section>
-            <!-- <div class="bg-img">
-                <img src="./images/handshake.png" />
-            </div> -->
-            <div class="recommend">
-                <h3 class="container">WHY WE ARE HIGHLY RECOMMENDED AMONGST THE CLIENTS</h3>
-                <div class="recommend-cards container">
-                    <div class="recommend-cards-ui">
-                        <img src="./images/Icon@2x.png" />
-                        <p>Global Experience</p>
-                        <span>Over 15 years’ of experience in the field and serving to the clients worldwide hence well versed with global quality requirements in auditing. Amongst all GxP audits, GMP audits is our specialization.</span>
-                    </div>
-                    <div  class="recommend-cards-ui">
-                        <img src="./images/Icon@2x.png" />
-                        <p>Global Experience</p>
-                        <span>Over 15 years’ of experience in the field and serving to the clients worldwide hence well versed with global quality requirements in auditing. Amongst all GxP audits, GMP audits is our specialization.</span>
-                    </div>
-                    <div class="recommend-cards-ui">
-                        <img src="./images/Icon@2x.png" />
-                        <p>Global Experience</p>
-                        <span>Over 15 years’ of experience in the field and serving to the clients worldwide hence well versed with global quality requirements in auditing. Amongst all GxP audits, GMP audits is our specialization.</span>
-                    </div>
-                    <div class="recommend-cards-ui">
-                        <img src="./images/Icon@2x.png" />
-                        <p>Global Experience</p>
-                        <span>Over 15 years’ of experience in the field and serving to the clients worldwide hence well versed with global quality requirements in auditing. Amongst all GxP audits, GMP audits is our specialization.</span>
-                    </div>
-                </div>
+            <div class="supplier-card">
+              <img src="./images/suppliericon.png" />
+              <h3>Browse Our Audit Library</h3>
+              <p>
+                Click here to check if the audits/ reports you are looking for
+                is already there in our audit report database (already conducted
+                or scheduled) and you can get it right away
+              </p>
+              <button>Click here</button>
             </div>
-
-        </section>
-
-        <section>
-            <div class="PharmaNum">
-                52345
-            </div>
-        </section>
-
+          </div>
+        </div>
+      </section>
     </div>
-    <footer>
-
-    </footer>
-    <script src="./js/bootstrap.bundle.min.js " ></script>
-    <script src="./js/jquery.min.js "> </script>
+    <footer></footer>
+    <script src="./js/bootstrap.bundle.min.js "></script>
+    <script src="./js/jquery.min.js "></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
-    
   </body>
 </html>
