@@ -65,7 +65,7 @@ $j('.company-slider').slick({
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
-    dots: false,
+    dots: true,
     arrows: true,
     autoplay: true,
   autoplaySpeed: 2000,
