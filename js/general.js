@@ -1,3 +1,4 @@
+$(document).ready(function(){
 let currentSlide = 0;
 let slides = document.querySelectorAll(".carousel-item");
 let indicators = document.querySelectorAll(".indicator");
@@ -47,6 +48,34 @@ $j(".company-slider").slick({
   slidesToScroll: 1,
   autoplay: true,
   autoplaySpeed: 2000,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
 });
 
 $j(".company-slider-reverse").slick({
@@ -59,6 +88,35 @@ $j(".company-slider-reverse").slick({
   autoplay: true,
   autoplaySpeed: 2000,
   rtl: true,
+  
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
 });
 
 $j(".testimonial-slider").slick({
@@ -78,3 +136,9 @@ function toggleDrawer() {
     drawer.style.left = "0px";
   }
 }
+
+$j(".mobile-toggle").click(function(){
+  $j(".menu").slideToggle();
+});
+
+});

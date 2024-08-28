@@ -65,6 +65,7 @@ body {
   display: flex;
   justify-content: space-between;
 }
+
 .ul-text1 li {
   list-style: none;
   padding: 0 5px;
@@ -96,6 +97,7 @@ body {
   box-shadow: 0 0 6px #ccc;
   border-radius: 8px;
 }
+
 .slick-dots li {
   list-style: none;
   padding: 0 7px;
@@ -346,6 +348,8 @@ body {
 
 .PharmaNum {
   background-image: url("../images/main_bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .hexagon-container {
@@ -353,6 +357,7 @@ body {
   padding-bottom: 180px;
   display: flex;
   justify-content: space-between;
+  flex-wrap: nowrap;
   gap: 20px;
   width: calc(313px * 5 + 20px * 4);
 }
@@ -586,6 +591,7 @@ body {
   padding-top: 125px;
   padding-bottom: 90px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   gap: 20px;
@@ -739,6 +745,11 @@ body {
   flex-direction: row;
   background: transparent;
 }
+@media only screen and (min-width: 601px) and (max-width: 992px) {
+  .contact {
+    padding-top: 50px;
+  }
+}
 
 .contact::before {
   content: "";
@@ -752,16 +763,12 @@ body {
   z-index: -1;
   pointer-events: none;
 }
-.contact-data {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  padding-bottom: 50px;
-}
+
 .contact-details {
   padding: 75px 0;
   color: white;
   max-width: 530px;
+  margin: 0;
 }
 .contact-details h3 {
   font-size: 50px;
@@ -857,8 +864,20 @@ textarea.input-field {
   gap: 60px;
   color: white;
 }
+
+@media only screen and (mim-width: 600px) {
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 60px;
+  }
+}
 .footer-bg {
   background-image: url("../images/Footer/footer_bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   background-color: #0253aa;
   padding-top: 50px;
 }
@@ -1221,6 +1240,24 @@ body {
   gap: 56px;
   padding-top: 72px;
 }
+@media only screen and (min-width: 601px) and (max-width: 992px) {
+  .card-main {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+  .card {
+    width: calc(100% - 51%);
+  }
+  .recommend-cards{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 600px;
+    /* margin-bottom: 10px; */
+  }
+}
 
 .services h3:before {
   position: absolute;
@@ -1293,13 +1330,23 @@ body {
   background-image: url("../images/main_bg.png");
 }
 
-.hexagon-container {
-  padding-top: 44px;
-  padding-bottom: 180px;
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
-  width: calc(313px * 5 + 20px * 4);
+@media only screen and (min-width: 601px) {
+  .hexagon-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0; 
+
+  }
+  .pharma-header h3 {
+    font-size: 36px;
+
+  }
+  .hexagon {
+    flex: 1 1 30%; 
+    max-width: 250px;
+    box-sizing: border-box;
+  }
 }
 
 .hexagon {
@@ -1464,23 +1511,23 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 20px;
+  padding-top: 20px 40px;
 }
 .textimonial-text p {
-  font-size: 22px;
+  font-size: 19px;
   color: black;
   padding-top: 20px;
   text-align: center;
 }
 .textimonial-text h4 {
-  font-size: 32px;
+  font-size: 29px;
   color: #0253aa;
   padding-top: 20px;
   font-weight: 600;
   text-align: center;
 }
 .textimonial-text span {
-  font-size: 16px;
+  font-size: 14px;
   color: black;
   font-weight: 100;
   text-align: center;
@@ -1692,6 +1739,7 @@ body {
 }
 .contact-data {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   flex-direction: row;
   padding-bottom: 50px;
@@ -1795,6 +1843,17 @@ textarea.input-field {
   gap: 60px;
   color: white;
 }
+.mobile-toggle{
+  display: none;
+}
+@media only screen and (min-width: 601px) and (max-width: 992px) {
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
 .footer-bg {
   background-image: url("../images/Footer/footer_bg.png");
   background-color: #0253aa;
@@ -1891,3 +1950,70 @@ textarea.input-field {
 }
 
 /**/
+
+@media (max-width: 1199px) {
+  .mobile-toggle {
+    display: block;  
+    background: white;
+    border-radius: 30px;
+    padding: 8px 13px;
+    border: none;
+  }
+  .ul-text {
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    gap: 0;
+  }
+  .header-text-top{
+    display: none;
+  }
+
+  .menu .ul-text li {
+      width: 100%;
+      padding: 7px 10px;
+      border-bottom: 1px solid rgb(255 255 255 / 20%);
+  }
+  .menu {
+    display: none;
+    justify-content: space-between;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #2d2d2d;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width:575px){
+  .supplier-content {
+    gap: 0;
+    padding: 10px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.supplier-card {
+    width: 100%;
+}
+
+.library-content {
+    width: 100%;
+}
+
+.library {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+}
+.suplier {
+  padding: 20px 10px;
+}
+.Copyright {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0;
+}
+}
